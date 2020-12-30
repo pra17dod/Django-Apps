@@ -20,7 +20,7 @@ APP_NAME = 'ChucksList'
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(l7j0%9vb7o(&pt2_(2nq9n8(@04lu7g=fx%2%v^d00=s43(a&'
+SECRET_KEY = str(os.getenv('SECRET_KEY_MYSITE'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
