@@ -23,10 +23,6 @@ urlpatterns = [
     path('ad/<int:pk>/favorite',
         views.AddFavoriteView.as_view(), name='ad_favorite'),
     path('ad/<int:pk>/unfavorite',
-        views.DeleteFavoriteView.as_view(), name='ad_unfavorite'),path('ad/<int:pk>/favorite',
-        views.AddFavoriteView.as_view(), name='ad_favorite'),
-    path('ad/<int:pk>/unfavorite',
         views.DeleteFavoriteView.as_view(), name='ad_unfavorite'),
-
 ]
 
